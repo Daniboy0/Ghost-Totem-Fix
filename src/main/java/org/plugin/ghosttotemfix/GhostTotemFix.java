@@ -22,8 +22,6 @@ public class GhostTotemFix extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        saveDefaultConfig();
-        loadConfiguration();
         getServer().getPluginManager().registerEvents(this, this);
         getLogger().info("GhostTotemFix has been enabled.");
     }
@@ -31,9 +29,6 @@ public class GhostTotemFix extends JavaPlugin implements Listener {
     @Override
     public void onDisable() {
         getLogger().info("GhostTotemFix has been disabled.");
-    }
-
-    private void loadConfiguration() {
     }
 
     @EventHandler
